@@ -1,9 +1,14 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('error') {
       steps {
         echo 'a'
+      }
+    }
+    stage('build') {
+      steps {
+        echo 'apple'
       }
     }
   }
