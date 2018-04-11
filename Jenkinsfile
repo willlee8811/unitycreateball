@@ -20,6 +20,10 @@ pipeline {
         stage('build') {
           steps {
             echo 'apple'
+            sh '''UNITY_PATH=D:\\Unity
+PROJECT_PATH=D:\\Create a ball
+$UNITY_PATH -projectPath $PROJECT_PATH -executeMethod ProjectBuild.Build -batchmode -quit $@
+'''
           }
         }
         stage('build2') {
