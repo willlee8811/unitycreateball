@@ -3,11 +3,6 @@ pipeline {
   stages {
     stage('stage1') {
       parallel {
-        stage('error') {
-          steps {
-            echo 'a'
-          }
-        }
         stage('stage1-2') {
           steps {
             echo '1-2'
